@@ -1,0 +1,29 @@
+@import 'tailwindcss';
+
+@layer base {
+    body {
+        @apply bg-gray-100;
+    }
+}
+
+@layer components {
+    .input {
+        @apply border-gray-400 border rounded-lg;
+    }
+
+    .heading {
+        @apply text-center text-xl font-medium;
+    }
+
+    .content {
+        @apply shadow-md rounded-md p-2 m-2 border-t-1 border-gray-200;
+    }
+
+    .delete {
+        @apply text-red-900 hover:text-red-500 font-bold transition-all duration-200 ease-in-out;
+    }
+
+    .body {
+        @apply w-[95vw] sm:w-[60vw] mx-auto shadow-lg rounded-md p-2 m-2 border-t-1 border-gray-200 bg-white;
+    }
+}
