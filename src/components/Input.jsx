@@ -20,8 +20,8 @@ const Input = () => {
     return (
         <>
             <div className='flex items-center justify-center m-2 gap-3'>
-                <input type="text" value={input} className='input pl-1.5 w-xs' onChange={(e) => { setInput(e.currentTarget.value) }} ref={inputRef} />
-                <button className='input px-1' onClick={handleTask}>Enter Task</button>
+                <input type="text" value={input} className='input pl-1.5 ' onChange={(e) => { setInput(e.currentTarget.value) }} ref={inputRef} />
+                <button className='input px-1 text-sm' onClick={handleTask}>Enter Task</button>
             </div>
         </>
     )
